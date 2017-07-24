@@ -101,9 +101,24 @@ namespace YieldFramework
             {
                 _defaultCtr.Update(dt);
             }
+        }
 
-
-
+        /// <summary>
+        /// 更新函数
+        /// </summary>
+        /// <param name="state">枚举的类型</param>
+        /// <param name="dt">当前帧和上一帧的间隔时间</param>
+        public void Update(CoroutineCtrEnum state, float dt)
+        {
+            switch (state)
+            {
+                case CoroutineCtrEnum.Default:
+                    _defaultCtr.Update(dt);
+                    break;
+                case CoroutineCtrEnum.Wait:
+                    _waitTimeCtr.Update(dt);
+                    break;
+            }
         }
 
 

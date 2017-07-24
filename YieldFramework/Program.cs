@@ -49,8 +49,8 @@ namespace YieldFramework
 
 
                 //模拟运行，每一帧为0.016s
-                ctr.Update("DefaultCtr", timeStep);
-                ctr.Update("WaitTimeCtr", timeStep);
+                ctr.Update(CoroutineCtrEnum.Default, timeStep);
+                ctr.Update(CoroutineCtrEnum.Wait, timeStep);
                 timeSum += timeStep;
 
 

@@ -3,12 +3,14 @@
 >   Auther : PengYao    
     Email  : yasin1151@outlook.com  
     time   : 2017/7/22  
-    version: 1.1
+    version: 1.2
+
+### Version : 1.2
+    弃用了使用string来区分的Update方法，新增了使用枚举来区分的Update方法
 
 ### Version : 1.1
-    添加了一层中间层来处理SendMsg中的事件，这样在新增加功能时只需要修改这个中间层，
+    添加了一层中间层来处理SendMsg中的事件，这样在新增加功能时只需要修改这个中间层
     对扩展更加友好
-
 
 ### Version : 1.0
     使用了Facade模式实现了大体的框架，为了防止某些问题，没有使用单例模式，  
