@@ -12,7 +12,7 @@ namespace YieldFramework
         /// <summary>
         /// 外观类，在构造时注入
         /// </summary>
-        protected ICoroutineFacade _facade;
+        protected CoroutineFacade _facade;
 
         /// <summary>
         /// 用于存储协程
@@ -46,7 +46,7 @@ namespace YieldFramework
         /// 为了不使用单例模式，采取了注入的方式
         /// </summary>
         /// <param name="facade">外观实例</param>
-        public void SetFacade(ICoroutineFacade facade)
+        public void SetFacade(CoroutineFacade facade)
         {
             _facade = facade;
         }

@@ -11,7 +11,6 @@ namespace YieldFramework
 {
     class Program
     {
-
         static IEnumerator test1()
         {
             for (int i = 0; i < 10; i++)
@@ -35,7 +34,7 @@ namespace YieldFramework
 
         static void Main(string[] args)
         {
-            CoroutineMgr ctr = new CoroutineMgr();
+            CoroutineFacade ctr = new CoroutineFacade();
             ctr.Initialize();
 
             ctr.StartContorine(test1());
@@ -44,8 +43,6 @@ namespace YieldFramework
             float maxTime = 11;
             float timeSum = 0;
             float timeStep = 0.016f;
-
-
 
             while (true)
             {
@@ -66,10 +63,6 @@ namespace YieldFramework
                 }
 
             }
-
-
-
-
             ctr.Release();
         }
     }

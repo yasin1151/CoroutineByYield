@@ -3,7 +3,11 @@
 >   Auther : PengYao    
     Email  : yasin1151@outlook.com  
     time   : 2017/7/22  
-    version: 1.0
+    version: 1.1
+
+### Version : 1.1
+    添加了一层中间层来处理SendMsg中的事件，这样在新增加功能时只需要修改这个中间层，
+    对扩展更加友好
 
 
 ### Version : 1.0

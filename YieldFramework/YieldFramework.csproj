@@ -44,11 +44,15 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AbsCoroutineCtr.cs" />
-    <Compile Include="CoroutineMgr.cs" />
+    <Compile Include="CoroutineCtrEnum.cs" />
+    <Compile Include="CoroutineFacade.cs" />
+    <Compile Include="CtrChanger.cs" />
     <Compile Include="DefaultCoroutineCtr.cs" />
     <Compile Include="ICanUpdateable.cs" />
     <Compile Include="ICoroutineCtr.cs" />
     <Compile Include="ICoroutineFacade.cs" />
+    <Compile Include="ICtrChanger.cs" />
+    <Compile Include="MsgString.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="WaitForSeconds.cs" />

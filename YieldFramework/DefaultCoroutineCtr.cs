@@ -30,10 +30,10 @@ namespace YieldFramework
                     continue;
                 }
 
-                if (ator.Current is WaitForSeconds)
+
+                if (null != ator.Current)
                 {
-                    //change to other
-                    _facade.SendMsg("ChangeToWait", ator);
+                    _facade.SendMsg(MsgString.Reset, ator, CoroutineCtrEnum.Default);
                     _needRemoveList.Add(ator);
                 }
             }

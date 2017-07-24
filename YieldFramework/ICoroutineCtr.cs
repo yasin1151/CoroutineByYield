@@ -23,6 +23,7 @@ namespace YieldFramework
         /// 为了不使用单例模式，采取了注入的方式
         /// </summary>
         /// <param name="facade">外观实例</param>
-        void SetFacade(ICoroutineFacade facade);
+        void SetFacade(CoroutineFacade facade);
+
     }
 }

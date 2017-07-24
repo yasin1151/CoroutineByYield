@@ -39,8 +39,8 @@ namespace YieldFramework
 
                 if (null == buf)
                 {
-                    //add to default list
-                    _facade.SendMsg("ChangeToDefault", ator);
+                    //add to other list
+                    _facade.SendMsg(MsgString.Reset, ator, CoroutineCtrEnum.Wait);
                     _list.Remove(ator);
                     continue;
                 }
@@ -60,12 +60,11 @@ namespace YieldFramework
                     }
 
 
-                    if (null == ator.Current)
+                    string ret = _facade.SendMsg(MsgString.Reset, ator, CoroutineCtrEnum.Wait);
+                    if (MsgString.True == ret)
                     {
-                        //change to default
-                        _facade.SendMsg("ChangeToDefault", ator);
+                        //reset
                         _list.Remove(ator);
-                        continue;
                     }
 
                 }
